@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Car Detection</title>
+</head>
+<body>
+    <h1>Car Detection from Webcam</h1>
+    <img src="{{ url_for('video_feed') }}" width="640" height="480">
+    <br>
+    <a href="{{ url_for('car_images') }}">View Detected Car Images</a>
+</body>
+</html>

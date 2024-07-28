@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Car Images</title>
+</head>
+<body>
+    <h1>Detected Car Images</h1>
+    <a href="/">Back to Camera Feed</a>
+    <ul>
+        {% for path, timestamp in images %}
+        <li>
+            <img src="{{ url_for('static', filename=path) }}" width="320" height="240">
+            <p>{{ timestamp }}</p>
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
